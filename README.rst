@@ -2,40 +2,32 @@
 django-helloworld
 =================
 
-A Django '`Hello World <https://en.wikipedia.org/wiki/%22Hello,_World!%22_program>`_' program example.
 
-Installation
+
+Установка
 ============
 
-You need install the pre-requirements for run this Hello World example.
-
-Update repositories of available packages to install, with
-the following command:
+Предварительно необходимо установить нужные пакеты и зависимости:
 
 ::
 
   $ sudo apt update
 
-Install necessary minimum dependencies, with the following command:
-
 ::
 
   $ sudo apt install python3-dev python3-pip python3-virtualenv sqlitebrowser
-
-For run this example need to install Django
-framework execute the follow command:
 
 ::
 
     $ sudo pip install -r requirements.txt
 
-And later followed by:
+После чего:
 
 ::
 
     $ python3 manage.py migrate
 
-At which point you should see:
+Увидим следующее:
 
 ::
 
@@ -62,14 +54,13 @@ At which point you should see:
       Applying sites.0002_alter_domain_unique... OK
 
 
-For use the Django Admin Interface, it's needed to create a superuser 
-for management, with the following command:
+Для доступа к админскому интерфейсу создадим суперюзера и пароль:
 
 ::
 
     $ python3 manage.py createsuperuser --username admin --email admin@mail.com
 
-At which point you should see:
+Увидим предложение создать пароль:
 
 ::
 
@@ -81,26 +72,23 @@ At which point you should see:
 Run application
 ===============
 
-After which you can run::
+После чего можно запустить сервер::
 
     $ python3 manage.py runserver
 
-Then, you can open the URL http://127.0.0.1:8000/ in your web browser and you can 
-see the hello world example like this:
+теперь можно постучаться на  URL http://127.0.0.1:8000/ :
 
-.. figure:: https://github.com/django-ve/django-helloworld/raw/master/docs/django_helloword.png
+.. figure:: https://github.com/mfigura61/django/blob/main/docs/scr1.png
    :width: 315px
    :align: center
    :alt: A Django 'Hello World' program example
 
-   A Django 'Hello World' program example
 
-Also you can open in your web browser the URL http://127.0.0.1:8000/admin for access to 
-the *Django Admin Interface* like this:
+Также по той же ссылке можно получить доступ к админскому интерфейсу http://127.0.0.1:8000/admin :
 
-.. figure:: https://github.com/django-ve/django-helloworld/raw/master/docs/django_admin_interface_running.png
+.. figure:: https://github.com/mfigura61/django/blob/main/docs/scr2.png
    :width: 315px
    :align: center
    :alt: Django Admin Interface running
 
-   Django Admin Interface running
+  
